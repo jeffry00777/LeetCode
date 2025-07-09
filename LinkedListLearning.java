@@ -519,4 +519,32 @@ public class LinkedListLearning {
 		}
 
 	}
+	
+	// Segregate even and odd nodes 
+	
+	
+	public void segg() {
+		
+		if(head == null) return;
+		Node evenStart = null;
+		Node evenEnd = null;
+		
+		Node oddStart = null;
+		Node oddEnd = null;
+		
+		Node current = head;
+		
+		while(current != null) {
+			if(current.data%2 ==2) {
+				if(evenStart == null) {
+					evenStart = current;
+					current.next = evenEnd;
+				}else {
+					
+				}
+				
+			
+			}
+		}
+	}
 }
